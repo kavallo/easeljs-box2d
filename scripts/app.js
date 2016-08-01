@@ -24,7 +24,7 @@ function init() {
 
 	initWorld(); // Create Box2D world
 
-	draw();
+	pollEvents();
 
 	createjs.Ticker.addEventListener("tick", update);
 	createjs.Ticker.setFPS(60);
@@ -64,7 +64,7 @@ function initWorld() {
 
 }
 
-function draw() {
+function pollEvents() {
 
 	stage.on("stagemousedown", function(e){
 
